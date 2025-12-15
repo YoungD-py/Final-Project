@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { selectTotalPrice } from '../features/cart/CartSlice';
+import { selectTotalCartPrice } from '../features/cart/CartSlice';
 import CartItem from './CartItem';
 
 function ShoppingCart() {
   const cartItems = useSelector(state => state.cart.items);
-  const totalPrice = useSelector(selectTotalPrice);
+  const totalCartPrice = useSelector(selectTotalCartPrice);
   const navigate = useNavigate();
 
   return (
@@ -22,7 +22,7 @@ function ShoppingCart() {
             ))}
           </div>
           <div className="cart-total">
-            <h2>Total: ${totalPrice}</h2>
+            <h2>Total Cart Amount: ${totalCartPrice}</h2>
           </div>
           <div className="cart-actions">
             <button onClick={() => navigate('/plants')} className="continue-shopping-btn">
