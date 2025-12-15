@@ -48,6 +48,22 @@ const plants = [
     description: 'Large-leaved plant with thick, waxy foliage.',
     imageUrl: 'https://via.placeholder.com/300x200?text=Rubber+Plant',
   },
+  {
+    id: 19,
+    name: 'Boston Fern',
+    price: 22,
+    category: 'Indoor Plants',
+    description: 'Feathery fern ideal for humid environments.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Boston+Fern',
+  },
+  {
+    id: 20,
+    name: 'Philodendron',
+    price: 19,
+    category: 'Indoor Plants',
+    description: 'Climbing plant with heart-shaped leaves.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Philodendron',
+  },
   // Succulents
   {
     id: 4,
@@ -97,6 +113,22 @@ const plants = [
     description: 'Flowering succulent with bright blooms.',
     imageUrl: 'https://via.placeholder.com/300x200?text=Kalanchoe',
   },
+  {
+    id: 21,
+    name: 'Haworthia',
+    price: 11,
+    category: 'Succulents',
+    description: 'Small succulent with translucent leaves.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Haworthia',
+  },
+  {
+    id: 22,
+    name: 'Lithops',
+    price: 13,
+    category: 'Succulents',
+    description: 'Stone-like succulent that mimics pebbles.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Lithops',
+  },
   // Outdoor Shrubs
   {
     id: 7,
@@ -145,6 +177,22 @@ const plants = [
     category: 'Outdoor Shrubs',
     description: 'Fragrant shrub with purple or white flowers.',
     imageUrl: 'https://via.placeholder.com/300x200?text=Lilac',
+  },
+  {
+    id: 23,
+    name: 'Spirea',
+    price: 26,
+    category: 'Outdoor Shrubs',
+    description: 'Flowering shrub with clusters of small blooms.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Spirea',
+  },
+  {
+    id: 24,
+    name: 'Weigela',
+    price: 29,
+    category: 'Outdoor Shrubs',
+    description: 'Deciduous shrub with trumpet-shaped flowers.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Weigela',
   },
 ];
 
