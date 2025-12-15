@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import Navbar from './Navbar';
-import ProductList from './ProductList';
-import ShoppingCart from './ShoppingCart';
+import Navbar from './components/Navbar';
+import ProductList from './components/ProductList';
+import ShoppingCart from './components/ShoppingCart';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <div style={{ textAlign: 'center', padding: '2rem' }}>
+    <div className="landing-page">
       <h1>Welcome to Paradise Nursery</h1>
       <button onClick={() => navigate('/plants')}>Get Started</button>
     </div>
