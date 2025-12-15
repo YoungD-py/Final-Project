@@ -24,6 +24,30 @@ const plants = [
     description: 'Easy-to-grow plant with long, arching leaves and small white flowers.',
     imageUrl: 'https://via.placeholder.com/300x200?text=Spider+Plant',
   },
+  {
+    id: 10,
+    name: 'Pothos',
+    price: 18,
+    category: 'Indoor Plants',
+    description: 'Trailing vine with heart-shaped leaves, perfect for hanging baskets.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Pothos',
+  },
+  {
+    id: 11,
+    name: 'ZZ Plant',
+    price: 27,
+    category: 'Indoor Plants',
+    description: 'Drought-tolerant plant with glossy, dark green leaves.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=ZZ+Plant',
+  },
+  {
+    id: 12,
+    name: 'Rubber Plant',
+    price: 40,
+    category: 'Indoor Plants',
+    description: 'Large-leaved plant with thick, waxy foliage.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Rubber+Plant',
+  },
   // Succulents
   {
     id: 4,
@@ -49,6 +73,30 @@ const plants = [
     description: 'Rosette-forming succulent with colorful, fleshy leaves.',
     imageUrl: 'https://via.placeholder.com/300x200?text=Echeveria',
   },
+  {
+    id: 13,
+    name: 'Cactus',
+    price: 10,
+    category: 'Succulents',
+    description: 'Spiky desert plant that requires minimal water.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Cactus',
+  },
+  {
+    id: 14,
+    name: 'Sedum',
+    price: 14,
+    category: 'Succulents',
+    description: 'Ground-cover succulent with star-shaped flowers.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Sedum',
+  },
+  {
+    id: 15,
+    name: 'Kalanchoe',
+    price: 16,
+    category: 'Succulents',
+    description: 'Flowering succulent with bright blooms.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Kalanchoe',
+  },
   // Outdoor Shrubs
   {
     id: 7,
@@ -73,6 +121,30 @@ const plants = [
     category: 'Outdoor Shrubs',
     description: 'Beautiful flowering shrub with large, colorful blooms in various shades.',
     imageUrl: 'https://via.placeholder.com/300x200?text=Hydrangea',
+  },
+  {
+    id: 16,
+    name: 'Rose Bush',
+    price: 25,
+    category: 'Outdoor Shrubs',
+    description: 'Classic flowering shrub with fragrant roses.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Rose+Bush',
+  },
+  {
+    id: 17,
+    name: 'Forsythia',
+    price: 30,
+    category: 'Outdoor Shrubs',
+    description: 'Early spring bloomer with bright yellow flowers.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Forsythia',
+  },
+  {
+    id: 18,
+    name: 'Lilac',
+    price: 32,
+    category: 'Outdoor Shrubs',
+    description: 'Fragrant shrub with purple or white flowers.',
+    imageUrl: 'https://via.placeholder.com/300x200?text=Lilac',
   },
 ];
 
