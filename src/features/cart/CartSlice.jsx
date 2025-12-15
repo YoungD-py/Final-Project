@@ -53,5 +53,6 @@ export const { addItem, removeItem, increaseQuantity, decreaseQuantity, updateQu
 // Selectors
 export const selectTotalUniqueItems = (state) => state.cart.items.length;
 export const selectTotalPrice = (state) => state.cart.items.reduce((total, item) => total + item.price * item.quantity, 0);
+export const selectTotalCartPrice = (state) => state.cart.items.reduce((total, item) => total + item.price * item.quantity, 0);
 
 export default cartSlice.reducer;
