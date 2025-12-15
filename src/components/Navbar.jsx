@@ -14,6 +14,9 @@ function Navbar() {
       <NavLink to="/plants" className={({ isActive }) => (isActive ? 'active' : '')}>
         Plants
       </NavLink>
+      <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+        About Us
+      </NavLink>
       <NavLink to="/cart" className={({ isActive }) => (isActive ? 'active' : '')}>
         🛒 Cart ({totalItems})
       </NavLink>

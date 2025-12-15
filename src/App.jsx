@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import ShoppingCart from './components/ShoppingCart';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function AppContent() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/plants" element={<ProductList />} />
         <Route path="/cart" element={<ShoppingCart />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </>
   );
