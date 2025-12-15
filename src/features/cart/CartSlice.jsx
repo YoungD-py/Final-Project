@@ -36,10 +36,19 @@ const cartSlice = createSlice({
         }
       }
     },
+    updateQuantity: (state, action) => {
+      const { id, quantity } = action.payload;
+      const item = state.items.find(i => i.id === id);
+      if (item && quantity > 0) {
+        item.quantity = quantity;
+      } else if (item && quantity <= 0) {
+        state.items = state.items.filter(i => i.id !== id);
+      }
+    },
   },
 });
 
-export const { addItem, removeItem, increaseQuantity, decreaseQuantity } = cartSlice.actions;
+export const { addItem, removeItem, increaseQuantity, decreaseQuantity, updateQuantity } = cartSlice.actions;
 
 // Selectors
 export const selectTotalUniqueItems = (state) => state.cart.items.length;
