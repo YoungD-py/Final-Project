@@ -1,26 +1,30 @@
 # Paradise Nursery
 
-Aplikasi e-commerce berbasis React untuk nursery tanaman, dengan fitur keranjang belanja menggunakan manajemen state Redux.
+Aplikasi e-commerce berbasis React untuk nursery tanaman, dengan fitur keranjang belanja menggunakan manajemen state Redux Toolkit.
 
 ## Fitur
 
 - **Halaman Landing**: Halaman selamat datang dengan navigasi ke katalog tanaman.
-- **Katalog Produk**: Jelajahi tanaman yang dikelompokkan berdasarkan kategori (Tanaman Indoor, Sukulen, Semak Outdoor).
-- **Keranjang Belanja**: Tambah, hapus, dan sesuaikan jumlah item di keranjang.
-- **Ikon Keranjang Dinamis**: Pembaruan real-time jumlah total item di navbar.
-- **Desain Responsif**: Didesain dengan CSS untuk antarmuka bersih dengan tema tropis.
+- **Katalog Produk**: Jelajahi tanaman yang dikelompokkan berdasarkan kategori (Tanaman Indoor, Sukulen, Semak Outdoor). Setiap produk menampilkan gambar, nama, harga, dan tombol "Add to Cart" yang dinonaktifkan setelah ditambahkan.
+- **Keranjang Belanja**: Tambah, hapus, dan sesuaikan jumlah item di keranjang dengan kontrol + dan -.
+- **Ikon Keranjang Dinamis**: Pembaruan real-time jumlah total item unik di navbar.
+- **Desain Responsif**: Didesain dengan CSS untuk antarmuka bersih dengan tema tropis, termasuk efek hover dan layout grid.
+- **State Management**: Menggunakan Redux Toolkit untuk mengelola state keranjang secara efisien.
 
 ## Teknologi yang Digunakan
 
-- **React**: Framework frontend untuk membangun UI.
-- **React Router**: Untuk routing sisi klien.
+- **React 18**: Framework frontend untuk membangun UI.
+- **React Router v6**: Untuk routing sisi klien.
 - **Redux Toolkit**: Untuk manajemen state keranjang belanja.
-- **CSS**: Untuk styling komponen.
+- **CSS3**: Untuk styling komponen dengan tema tropis.
+- **Create React App**: Untuk setup proyek.
 
 ## Struktur Proyek
 
 ```
 src/
+├── app/
+│   └── store.js            # Konfigurasi Redux store
 ├── components/
 │   ├── Navbar.jsx          # Bilah navigasi dengan ikon keranjang
 │   ├── ProductList.jsx     # Menampilkan produk berdasarkan kategori
@@ -33,7 +37,11 @@ src/
 │   └── plants.js           # Data statis untuk tanaman
 ├── App.jsx                 # Komponen app utama dengan routing
 ├── App.css                 # Gaya global
-└── index.js                # Titik masuk app
+├── index.js                # Titik masuk app dengan Provider Redux
+public/
+├── index.html              # Template HTML
+package.json                # Dependensi dan scripts
+README.md                   # Dokumentasi proyek
 ```
 
 ## Memulai
@@ -71,10 +79,18 @@ npm run build
 
 ## Penggunaan
 
-- Navigasi ke halaman utama dan klik "Get Started" untuk melihat tanaman.
-- Jelajahi tanaman berdasarkan kategori dan tambahkan item ke keranjang.
-- Lihat dan kelola item keranjang Anda, sesuaikan jumlah, atau hapus item.
-- Ikon keranjang di navbar menunjukkan jumlah total item unik.
+- **Halaman Utama**: Klik "Get Started" untuk masuk ke katalog produk.
+- **Katalog Produk**: Jelajahi tanaman berdasarkan kategori. Klik "Add to Cart" untuk menambah item (tombol akan dinonaktifkan setelah ditambahkan).
+- **Keranjang Belanja**: Akses via navbar. Sesuaikan quantity dengan tombol + dan -, atau hapus item. Lihat total harga dan lanjut ke checkout (placeholder).
+- **Navigasi**: Gunakan navbar untuk berpindah halaman, dengan ikon keranjang menunjukkan jumlah item.
+
+## Redux Setup
+
+Proyek menggunakan Redux Toolkit untuk state management:
+
+- **Store**: Dikonfigurasi di `src/app/store.js`.
+- **Slice**: `CartSlice.jsx` mengelola actions seperti `addItem`, `removeItem`, dll.
+- **Selectors**: `selectTotalUniqueItems` dan `selectTotalPrice` untuk mengakses state.
 
 ## Berkontribusi
 
